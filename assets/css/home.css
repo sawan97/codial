@@ -1,0 +1,145 @@
+/* <--------body--------> */
+body{
+   align-items: center;
+}
+
+/* <------header------> */
+#header{
+	text-align: center;
+}
+
+/* <---------form-------> */
+form{
+	margin-left: 7rem;
+}
+#table{
+	align-items: center;
+}
+
+/* <-------description----> */
+.desc{
+	margin-top: 0rem;
+	margin-left: 2rem;
+}
+input[type=text]{
+	border-top-style: hidden;
+   border-bottom-style: hidden;
+   border-left-style: hidden;
+   border-right-style: hidden;
+   height: 3rem;
+   width: 70vw;
+   font-size: medium;
+   padding-left: 2rem;
+   padding-top: 0rem;
+   /*margin-bottom:-2rem;*/
+   /*padding-bottom:2rem;*/
+   /*margin-top: -3rem;*/
+}
+
+/* <-------category-------> */
+select{
+	width:40vw;
+	height: 3rem;
+	border-top-style: hidden;
+    border-bottom-style: hidden;
+    border-left-style: hidden;
+    border-right-style: hidden;
+     font-size: medium;
+     padding-left: 2rem;
+}
+.no-outline:focus {
+    outline:none;
+}
+
+/* <-------date------> */
+label[type=date]{
+	/*position: absolute;
+	left: %;*/
+	/*padding-left: 2rem;*/
+}
+input[type=date]{
+	width:40vw;
+	height: 3rem;
+		 border-top-style: hidden;
+    border-bottom-style: hidden;
+    border-left-style: hidden;
+    border-right-style: hidden;
+     font-size: medium;
+     padding-left: 2rem;
+}
+
+/* <------button--------> */
+button[type=submit]{
+	height: 4rem;
+	width: 11rem;
+	margin-left: 23rem;
+	margin-top: 3rem;
+	background-color: black;
+	color: white;
+	letter-spacing: 0.1rem;
+	font-weight: 700;
+	 border-top-style: hidden;
+    border-bottom-style: hidden;
+    border-left-style: hidden;
+    border-right-style: hidden;
+}
+button[type=button]{
+	height: 4rem;
+	font-weight: 700;
+	letter-spacing: 0.1rem;
+	width: 11rem;
+	background-color:#d10213;
+	color: white;
+	margin-top: 3rem;
+	margin-left: 1rem;
+	 border-top-style: hidden;
+    border-bottom-style: hidden;
+    border-left-style: hidden;
+    border-right-style: hidden;
+
+}
+
+/* <-------list---------> */
+.list{
+	/* margin-top: 1rem; */
+	border-top-style: groove;
+}
+.list p{
+	display: inline-table;
+	font-size: 1.5rem;
+	margin-left: 1rem;
+	color: grey;
+	/* font-weight: 700; */
+	font-family: sans-serif;
+	letter-spacing: 0.1rem;
+}
+.items{
+	/* display: inline-block; */
+	margin-bottom: 2rem;
+	margin-left: 7.7rem;
+	color: lightslategrey;
+	letter-spacing: 0.1rem;
+	font-family: Arial;
+	font-weight: bold;
+
+} 
+.items span{
+	color: lightslategrey;
+	font-size: medium;
+}
+input[type=checkbox]{
+	height: 1.2rem;
+	width: 1.2rem;
+	margin-left: 5rem;
+}
+/* .list{
+	align-items: center;
+	border-top-style: groove;
+}
+.
+.list div{
+	margin-left: 4.5rem;
+}
+ */
+
+
