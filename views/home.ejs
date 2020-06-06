@@ -8,22 +8,22 @@
     </head>
     <body>
         <h1 id="header" >TODO APP</h1>
-	<form action="/data" id="form">
+	<form action="/data"  method="post" id="form">
 		<table cellspacing="0" border="1">
 			<tr>
 				<td  colspan="2">
 		<label for="description" style="margin-left: 2rem;">DESCRIPTION</label>
 		<br>
-		<input type="text" name="description" placeholder="what do you want?" class="no-outline">
+		<input type="text" name="description" placeholder="what do you want?" class="no-outline" required>
 				</td>
 			</tr>
 			<tr>
 				<td >
 					<label for="category"  style="margin-left: 2rem;">CATEGORY</label>
 					<br>
-					<select name="category" class="no-outline">
+					<select name="category" class="no-outline" required>
 						<option>choose a category</option>
-						<option value="Perssonnel">personnel</option>
+						<option value="Personal">personal</option>
 						<option value="Home">Home</option>
 						<option value="Work">Work</option>
 						<option value="Others">Others</option>
@@ -32,7 +32,7 @@
 				<td >
 					<label for="date"  style="margin-left: 2rem;">Due Date</label>
 					<br>
-					<input type="date" name="date" class="no-outline">
+					<input type="date" name="date" class="no-outline" required>
 				</td>
 			</tr>
 		</table>
@@ -46,8 +46,10 @@
 				<input type="checkbox" name="item1" value="<% i.description %>">
 				<label for="item1">
 					<p><%=i.description%></p>	
+					<a href="/delete-data/?description= <%= i.description %>"><button type="submit" id="delete" class="no-outline">DELETE</button></a>
+					<button type="button" class="no-outline"><%= i.category %></button>
 					<div class="items">
-						<span><i class="far fa-calendar-alt"></i></span> &nbsp;<%=i.date%>
+						<span><i class="far fa-calendar-alt"></i> &nbsp;<%=i.date%></span> 
 					</div>
 				</label>
 			</div>
