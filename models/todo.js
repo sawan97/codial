@@ -1,21 +1,21 @@
 const mongoose = require('mongoose');
 
-//schema
 const todoSchema = new mongoose.Schema({
-    description:{
+    description: {
         type:String,
         required:true
     },
-    category:{
+    category: {
         type:String,
         required:true
     },
-    date:{
-        type:Number,
+    date: {
+        type:String,
         required:true
     }
 });
 
 //name of the collection using the schema
 const Todo = mongoose.model('Todo',todoSchema);
+
 module.exports = Todo;

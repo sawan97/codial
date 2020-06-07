@@ -1,9 +1,10 @@
 const express = require('express');
-const db = require('./config/mongoose');
-//add schema
-const Todo = require('./models/todo')
-const app = express();
 const port = 8000;
+
+const db = require('./config/mongoose');
+const Todo = require('./models/Todo')
+const app = express();
+
 
 //set view engine
 app.set('view engine','ejs');

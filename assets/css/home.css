@@ -1,11 +1,13 @@
 /* <--------body--------> */
 body{
    align-items: center;
+   background-image: url(../images/todo_image.jpg);
 }
 
 /* <------header------> */
 #header{
 	text-align: center;
+	color:#6c75f5;
 }
 
 /* <---------form-------> */
@@ -72,7 +74,7 @@ input[type=date]{
 #form button[type=submit]{
 	height: 4rem;
 	width: 11rem;
-	margin-left: 23rem;
+	margin-left: 28rem;
 	margin-top: 3rem;
 	background-color: black;
 	color: white;
@@ -138,7 +140,7 @@ input[type=checkbox]{
 	margin-right: 15rem;
 	margin-top: 2rem;
 	/* margin-left: 30rem; */
-	background-color: yellow;
+	background-color: lightblue;
 	height: 3rem;
 	font-weight: 700;
 	letter-spacing: 0.1rem;
