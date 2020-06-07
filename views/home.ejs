@@ -46,7 +46,7 @@
 				<input type="checkbox" name="item1" value="<% i.description %>">
 				<label for="item1">
 					<p><%=i.description%></p>	
-					<a href="/delete-data/?description= <%= i.description %>"><button type="submit" id="delete" class="no-outline">DELETE</button></a>
+					<a href="/delete-data/?description=<%=i.description%>"><button type="submit" id="delete" class="no-outline">DELETE</button></a>
 					<button type="button" class="no-outline"><%= i.category %></button>
 					<div class="items">
 						<span><i class="far fa-calendar-alt"></i> &nbsp;<%=i.date%></span> 

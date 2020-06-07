@@ -1,4 +1,7 @@
 const express = require('express');
+const db = require('./config/mongoose');
+//add schema
+const Todo = require('./models/todo')
 const app = express();
 const port = 8000;
 
@@ -13,7 +16,6 @@ app.use(express.static('assets'));
 
 //use express router
 app.use('/',require('./routes/index'));
-
 
 app.listen(port,function(err){
     if(err){

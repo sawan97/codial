@@ -1,3 +1,4 @@
+// const Todo = require('../models/todo');
 var  todoList = [
         {
             description:"get vegetable",
@@ -12,10 +13,10 @@ var  todoList = [
     ]
 
 module.exports.home = function(req,res){
-    return res.render('home',{
+         return res.render('home',{
         title: 'To Do List',
         todo_list:todoList
-    });
+    });    
 }
 
 module.exports.add = function(req,res){
@@ -23,12 +24,13 @@ module.exports.add = function(req,res){
 }
 module.exports.delete = function(req,res){
     console.log(req.query.description);
-    let description = req.query;
-    let listIndex = todoList.findIndex(data =>data.description == description);
-    // console.log(data.description);
-    // if(listIndex!=-1){
+    let description = req.query.description;
+
+    let listIndex = todoList.findIndex(data => data.description == description);
+    
+    if(listIndex!=-1){
         console.log(listIndex);
         todoList.splice(listIndex ,1);
-    // }
+    }
     return res.redirect('back');
 }
